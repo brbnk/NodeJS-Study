@@ -1,0 +1,32 @@
+--> How to start projects with Webpack and Gulp
+--> Testing and deployment
+
+--> Tricks in "package.json" file
+    -- In the script field, you can define commands to run complex scripts
+    -- Ex: "scripts": { 
+                "test": "./node_modules/.bin/mocha test/*.js"
+            }
+
+            run with: "npm test" or "npm test -- test/*.js" 
+
+--> What if yout build requirements have more steps, and include things like copying, concatenating,
+or moving files? Many build systems provide Javascript APIs for automating builds: Gulp is the solution.
+
+=== GULP ===
+    --> It's a build system based on streams.
+    --> Gulp's API has methods for things like finding files and piping them throug plugins that transform them in some way.
+    --> Tasks usually follow the same pattern (STCO)
+        - Source:    Gather input files
+        - Transpile: Pipe them through a plugin that transforms them
+        - Concat:    Pipe the files together to create a monolithic build 
+        - Output:    Set a file destination or move the output files
+    --> Gulp can be used to write more­complex tasks with JavaScript and is cross­­ platform.
+
+=== Webapck ===
+    --> Especifically designed to build web applications.
+    --> It's easier to quickly set up a build system that supports incremental builds.
+    --> webpack terminology:
+        -- Plugins are used to change the behavior of the build process. Instances of classes.
+        -- Loaders are transformations that are applied to resource files.
+
+=== Loading CommonJS modules and assets ===
