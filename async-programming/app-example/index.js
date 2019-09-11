@@ -11,10 +11,23 @@ app.set('port', process.env.port || 3000)
 // Middlewares
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(
+    "/css/bootstrap.css",
+    express.static("node_modules/boostrap/dist/css/bootstrap.css")
+)
 
 // Endpoints
 app.get('/articles', (req, res, next) => { 
-    res.send(articles)
+    Article.all((err, articles) => { 
+        res.format({
+            html: () => { 
+                res.render("articles.ejs", { articles: articles })
+            },
+            json: () => { 
+                res.send(articles)
+            }
+        })
+    })
 })
 
 app.get('/articles/:id', (req, res, next) => { 
