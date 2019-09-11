@@ -1,0 +1,23 @@
+-> To import a module, use 'require' (synchronous I/O)
+    - Because it's synchronous, it should be used only when application starts.
+    - It Blocks Node from doing anything until the call has finished.
+    - Omitting the '.js' extension, Node will also looks for '.json' files. 
+
+-> Order in which Node looks for files:
+    1) Core Modules
+    2) node_modules in Current Directory 
+    3) node_modules in Parent Directory
+
+-> 'exports' and 'module.exports' are different
+    - 'exports' = exports only one variable or function
+        - 'exports.MyFunc' = 'module.exports.MyFunc'
+        - Global reference to 'module.exports'
+        - When 'exports' is assigned to anything else, the global reference is lost.
+    - 'module.exports' = It exports a set of functions (Class)
+
+-> NODE_PATH: Alternative path to 'node_modules'
+
+-> Module directory is defined by a file called 'index.js' or by the 'main' field in 'package.json' file.
+
+-> If two files in an application require the same module, the first require will store the data returned 
+in application memory, so the second required won't need to access and evaluate the module's source files.

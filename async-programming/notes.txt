@@ -1,0 +1,24 @@
+-> Ways to handle async programming in Node: Callbacks and Event Listeners
+    - Calllbacks generally define logic for one-off responses. It's a function passed as an argument to an async function.
+    - Event listeners triggered by events (eg. Mouse Clicks)
+-> Callbacks have two arguments: the first one is for an error, and the second is for the results.
+
+-> Event.Emitter.prototype.on
+
+-> A Node HTTP server instance is an example of an event emitter, a class (Event-Emitter) that
+can be inherited and that adds the ability to emit and handle events.
+
+-> Important Node API components, such as HTTP servers, TCP servers, and streams, are implemented as event emitters.
+    - Listener = Event + Callback
+    - It can be defined to respond only once (using the listener 'once')
+
+-> When creating asynchronous applications, you have to pay close attention to the way your application flows and keep
+a watchful eye on application state:
+    - The conditions of the event loop
+    - Application variables
+    - Other resources that changes as program logic executes
+
+-> Closures can save the values of external variables and it is useful in async porgramming
+
+-> Flow Control: Groups of async tasks. There are two types: Serial and Parallel
+    - Serial: Functions are pushed to an array. The order of the tasks is important.
