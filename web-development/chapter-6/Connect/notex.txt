@@ -1,0 +1,28 @@
+-- A 'middleware' is a Javascript function
+-- Middlewares commonly follows a simple convention in order to provide configurations to capabilities to developers:
+    using a funtion that returns another function (a closure).
+
+    ex: function setup(option) {
+        // configs here
+
+        return function (req, res, next) { 
+            // middleware logic
+        }
+    }
+
+    app.use(logger(":method :url"));
+    function logger(format) { 
+        const regexp = /:(\w+)/g
+
+        return formatLogger(req, res, next) => { 
+            const str = format.replace(regexp, (match, property) => { 
+                return req[property]
+            })
+
+            console.log(str)
+            next()
+        }
+    }
+
+-- Connect's error handling is intentionally minimal, allowing the developer to specify the way errors should be handled.
+
