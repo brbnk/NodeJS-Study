@@ -1,0 +1,18 @@
+{
+  "name": "kraken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.8",
+    "generator-kraken": "^2.2.3",
+    "grunt-cli": "^1.3.2",
+    "yo": "^3.1.0"
+  }
+}

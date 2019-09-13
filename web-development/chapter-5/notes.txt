@@ -1,0 +1,25 @@
+--> Backend frameworks with NodeJS
+--> Koa, hapi, Sails.js, DerbyJS, Flatiron, and LoopBack
+
+=== Koa: HTTP server library (http://koajs.com/) ===
+    -- Based on Express, but uses ES2015 generator syntax to define middlewares.
+    -- It needs a middleware router, so it means that a typical workflow requires planning (e.g "koa-router" module).
+    -- Koa doesn't come with the tools necessary to make RESTful APIs without implementing some kind of route-handling middleware.
+    -- Koa's main advantage is that it's streamlined yet has some excellent third-party modules.
+
+=== Kraken: HTTP server library (https://github.com/krakenjs/lusca) ===
+    -- Kraken’s Yeoman generator
+
+=== Hapi: HTTP Server Framework (http://hapijs.com/api) ===
+    -- Server framework that focuses on web API development
+    -- It doesn't come with any client-side support or database model layer.
+    -- High-level server container abstraction, security headers.
+    -- hapi’s plugin API is one of the biggest advantages of using hapi.
+    -- Disavantages: It's minimal, so there's no guidance on project structure.
+
+=== Sails.js: MVC framework === 
+    -- Comes with Object Relational Mappings (ORM)
+    -- Front-end agnositc
+
+=== DerbyJS: Full­stack framework ===
+    -- It depends on MongoDB and Redis

@@ -1,4 +1,5 @@
 /async-programming/app-example/node_modules/*
 /web-development/chapter-4/gulp-project/node_modules/*
 /web-development/chapter-4/webpack-project/node_modules/*
+/web-development/chapter-5/hapi/node_modules/*
 /web-development/chapter-4/gulp-project/dist/*
