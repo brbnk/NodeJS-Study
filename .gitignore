@@ -3,4 +3,5 @@
 /web-development/chapter-4/webpack-project/node_modules/*
 /web-development/chapter-5/hapi/node_modules/*
 /web-development/chapter-6/Connect/node_modules/*
+/web-development/chapter-6/Express/node_modules/*
 /web-development/chapter-4/gulp-project/dist/*
