@@ -1,0 +1,9 @@
+--> Unit testing is used to verify logic, tipically at a function or method level.
+    - TDD (Test-Driven Development) and BDD (Behavior-Driven Development)
+    - Writing tests helps you think more critically about your application design choices 
+        and helps you avoid pitfalls early on. 
+        
+--> Acceptance Testing: tipically used for web applications.
+    - It envolves scripting control of a browser and attempting to trigger web application
+        functionality.
+    
