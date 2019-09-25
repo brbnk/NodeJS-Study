@@ -1,0 +1,20 @@
+--> Community conventions
+--> https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap11.html
+--> UNIX philosophy: "Write programs that do one thing and do it well.
+Write programs to work together. Write programs to handle text streams,
+because that is a universal interface."
+
+--> apropos <cmd> = search the database of system commands.
+
+--> Node also has an API for working with pipes. It'ss based on Node
+streams, so you can use it with anything that implements Node's stream
+classes. Read on to learn more about pipes in Node.
+
+--> Using '&&' executes the next command if the previous exit code is zero.
+--> Using '||' executes the next command if the exit code is a nonzero number.
+
+--> Browserify and Uglify: Pipes.
+    --> Browserify: It's an application that takes Node modules and bundles
+        them up for use in the browser.
+    --> UglifyJS: It's an application that minifies a JavaScript file so that it takes up
+        less bandwidth and time to send to a browser.

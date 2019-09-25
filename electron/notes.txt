@@ -1,0 +1,5 @@
+--> Electron app has the following components:
+    The main process: A Node script that boots the application and provides
+        access to native Node modules.
+    The render process: A web page managed by Chromium
+
