@@ -5,3 +5,4 @@
 /web-development/chapter-6/Connect/node_modules/*
 /web-development/chapter-6/Express/node_modules/*
 /web-development/chapter-4/gulp-project/dist/*
+/electron/electron-quick-start/node_modules/*
